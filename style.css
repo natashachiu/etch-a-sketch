@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 44px;
+}
+
+#container-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: solid black;
+    width: 30em;
+    height: 30em;
+    
+}
+
+
+
+.row-container { 
+    display: flex;
+    flex: 1 1 0;
+    border-bottom: solid darkgrey;
+    border-width: thin;
+}
+
+.pixel {
+    flex: 1 1 0;
+    border-right: solid darkgrey;
+    border-width: thin;
+}
