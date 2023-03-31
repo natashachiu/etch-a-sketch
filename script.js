@@ -26,7 +26,6 @@ function toggleMode(e) {
 
 // -------------------------- grid ----------------------------------
 
-
 function makeGrid(size){
     removeAllChildNodes(container);
 
@@ -75,7 +74,6 @@ function randomRgbColor() {
     return [r,g,b];
 }
 
-
 // ----------------------- grid size slider ------------------------------
 
 const range_slider = document.querySelector('#range-slider');
@@ -87,8 +85,6 @@ function changeGridSize(e) {
     output.textContent = `Grid size: ${e.target.value} x ${e.target.value}`;
     makeGrid(e.target.value);
 }
-
-
 
 // ---------------------------- clear -----------------------------------
 
