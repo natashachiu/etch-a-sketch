@@ -1,7 +1,7 @@
 # Etch-a-sketch
 
 ## Preview: 
-- [Live version] (https://natashachiu.github.io/etch-a-sketch/)
+- [Live version](https://natashachiu.github.io/etch-a-sketch/).
 
 ## Features:
 - Classic mode: draw with grey color.
