@@ -1,7 +1,7 @@
 # Etch-a-sketch
 
 ## Preview: 
-- [Live version](https://natashachiu.github.io/etch-a-sketch/).
+- [Live version](https://natashachiu.github.io/etch-a-sketch/)
 
 ## Features:
 - Classic mode: draw with grey color.
@@ -18,3 +18,6 @@
 
  - Toggle button that switches upon click
     https://linuxhint.com/toggle-button-javascript/#:~:text=A%20tgl()%20method%20is,be%20toggled%20to%20%E2%80%9CON%E2%80%9D.
+
+- Range slider
+    https://www.w3schools.com/howto/howto_js_rangeslider.asp
