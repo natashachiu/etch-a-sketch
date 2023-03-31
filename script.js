@@ -1,6 +1,6 @@
-const size = 30;
-
+let size = 30;
 const container = document.querySelector("#container-div");
+makeGrid(size);
 
 // ------------- draw on mousedown property ---------------------
 let is_drawing = false;
@@ -84,6 +84,8 @@ range_slider.addEventListener('input', changeGridSize);
 function changeGridSize(e) {
     output.textContent = `Grid size: ${e.target.value} x ${e.target.value}`;
     makeGrid(e.target.value);
+
+    size = e.target.value;
 }
 
 // ---------------------------- clear -----------------------------------
@@ -94,8 +96,6 @@ clear.addEventListener('click', clearAll);
 function clearAll() {
     makeGrid(size);
 }
-
-makeGrid(size);
 
 
 // ------------------- button click animation -----------------------------
