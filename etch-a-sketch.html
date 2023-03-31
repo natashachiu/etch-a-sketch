@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Etch A Sketch</h1>
-    <button class="prompt-size">Grid size</button>
+
     <div id="container-div"></div>
+
+    <div id="controls">
+        <button class="mode">Classic mode</button>
+        <button class="clear">Clear</button>
+    
+        <div class = "slider-container">
+            <input type="range" min="2" max="100" value="30" id="range-slider">
+            <div class="grid-size">Grid size: 30 x 30</div>
+        </div>
+    </div>
+
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+    
 
 
     <script src="script.js"></script>

@@ -1,32 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+body {
+    background-color: darkslategray;
+}
 
 h1 {
     font-family: 'Sacramento', cursive;
     text-align: center;
-    font-size: 44px;
+    font-size: 55px;
+    font-weight: 950;
+    color: goldenrod;
+    margin-bottom: -1.9em;
+    margin-top: 1.2em;
+    padding-right: 0.2em;
+    text-shadow: 2px 2px 3px black;
 }
 
 #container-div {
     display: flex;
     flex-direction: column;
+    background-color: gainsboro;
     margin: auto;
-    border: solid black;
-    width: 30em;
-    height: 30em;
-    
+    border: 7em solid rgb(123, 12, 12);
+    border-radius: 3em;
+    width: 34em;
+    height: 34em;
+    box-shadow: 2px 2px 3px 3px black;
+    cursor: crosshair;
 }
-
-
 
 .row-container { 
     display: flex;
     flex: 1 1 0;
-    border-bottom: solid darkgrey;
+    border-bottom: solid lightgrey;
     border-width: thin;
 }
 
 .pixel {
     flex: 1 1 0;
-    border-right: solid darkgrey;
+    border-right: solid lightgrey;
     border-width: thin;
+}
+
+/* -------------------- CONTROLS ---------------------- */
+
+#controls {
+    justify-content: center;
+    display: flex;
+    gap: 1.4em;
+    margin-top: -5em;
+    color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.circle-container {
+    display: flex;
+    margin-top: -3.5em;
+    justify-content: center;
+    gap: 600px;
+
+    
+}
+
+.circle {
+    flex: 0;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 3px black;
+
+}
+
+button{
+    background-color: goldenrod;
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: 200;
+    cursor: pointer;
+    color: rgb(123, 12, 12);
+    border-radius: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 3px 1px black;
+}
+
+
+.slider-container {
+    padding-left: 3.8em;
+}
+
+#range-slider {
+    appearance: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 3px;  
+    background: rgb(241, 241, 204);
+    outline: none;
+    opacity: 0.7;
+    transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  #range-slider::-webkit-slider-thumb {
+    appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: goldenrod;
+    cursor: pointer;
+  }
+  
+  #range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+  }
+  
+  .grid-size {
+    margin-top: 0.4em;
+    padding-left: 0.2em;
 }
